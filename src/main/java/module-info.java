@@ -8,5 +8,5 @@ module com.argandona.mantenedorusuarios {
     opens com.argandona.mantenedorusuarios to javafx.fxml;
     exports com.argandona.mantenedorusuarios;
     opens com.argandona.mantenedorusuarios.controller to javafx.fxml;
-    
+    opens com.argandona.mantenedorusuarios.dto to javafx.base;
 }

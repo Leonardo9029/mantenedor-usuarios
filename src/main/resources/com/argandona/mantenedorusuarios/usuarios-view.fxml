@@ -4,23 +4,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.argandona.mantenedorusuarios.controller.UserController">
+<VBox alignment="CENTER" prefHeight="465.0" prefWidth="319.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.argandona.mantenedorusuarios.controller.UserController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
-   <TextField />
-   <TextField />
-   <TextField />
-   <Button mnemonicParsing="false" text="Button" />
-   <Button mnemonicParsing="false" text="Button" />
-   <Button mnemonicParsing="false" text="Button" />
-   <TableView prefHeight="200.0" prefWidth="200.0">
+   <TextField fx:id="txtNombre" promptText="Nombre" />
+   <TextField fx:id="txtContrasena" promptText="Contraseña" />
+   <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#agregarUsuario" text="Agregar" />
+   <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#modificarUsuario" text="Modificar" />
+   <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminarUsuario" text="Eliminar" />
+   <TableView fx:id="tblUsuarios" prefHeight="200.0" prefWidth="200.0">
      <columns>
-       <TableColumn prefWidth="75.0" text="C1" />
-       <TableColumn prefWidth="75.0" text="C2" />
+       <TableColumn prefWidth="75.0" text="ID" />
+       <TableColumn prefWidth="75.0" text="Nombre" />
+         <TableColumn prefWidth="75.0" text="Contraseña" />
      </columns>
    </TableView>
 </VBox>
